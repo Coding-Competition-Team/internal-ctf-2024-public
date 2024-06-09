@@ -1,0 +1,10 @@
+title: Alchemy
+author: I-En
+description: Cooler name than chemistry
+flag: ACSI{Au_79_196.97_metal}
+
+tags:
+  - rev
+
+dist:
+  - ./dist/alchemy

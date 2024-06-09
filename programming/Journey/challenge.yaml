@@ -1,0 +1,17 @@
+title: Journey
+author: I-En
+description: our story begins in the faraway lands of woodlands...
+flag: ACSI{pada_asasnya_malaysi4}
+
+tags:
+  - programming
+
+dist:
+  - ./dist/README.md
+
+conn:
+  id: journey
+  url: nc <host> <port> 
+  port: 7016
+  containerPort: 50000 
+  runner: false

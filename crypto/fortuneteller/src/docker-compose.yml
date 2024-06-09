@@ -1,0 +1,9 @@
+version: "3.7"
+name: crypto
+
+services:
+  fortuneteller:
+    build: ./
+    privileged: true
+    ports:
+      - 7002:4001

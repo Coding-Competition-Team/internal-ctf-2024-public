@@ -1,0 +1,17 @@
+title: Fortuneteller
+author: Nigel
+description: Random numbers? Do they expect me to tell fortunes?
+flag: ACSI{i_c3n_pr3d1ct_th3_futu53!}
+
+tags:
+  - crypto
+
+dist:
+  - ./dist/source.py
+
+conn:
+  id: fortune
+  url: nc <host> <port> 
+  containerPort: 4001
+  port: 7002
+  runner: false

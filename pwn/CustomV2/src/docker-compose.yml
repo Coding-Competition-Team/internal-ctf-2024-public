@@ -1,0 +1,9 @@
+version: "3.7"
+name: pwn
+
+services:
+  customv2:
+    build: ./
+    privileged: true
+    ports:
+      - 7006:5000

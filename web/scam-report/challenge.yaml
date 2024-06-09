@@ -1,0 +1,18 @@
+title: Scam Report
+author: Reyes
+description: |
+  I created a webapp that allows users to report a email/phone number together with a description to let the authorities  know if a particular source is indeed a scammer.
+flag: ACSI{r3c0nstructed_d3b8g_p1111n_fl4sk_4_life}
+
+tags:
+  - web
+
+dist: 
+  - ./dist/dist.zip
+
+conn:
+  id: scam
+  url: http://<host>:<port> 
+  containerPort: 7012
+  runner: true
+

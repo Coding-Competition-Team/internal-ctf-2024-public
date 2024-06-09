@@ -1,0 +1,9 @@
+version: "3.7"
+name: crypto
+
+services:
+  wonderland:
+    build: ./
+    privileged: true
+    ports:
+      - 7001:4001

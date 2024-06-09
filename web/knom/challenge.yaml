@@ -1,0 +1,21 @@
+title: KNOM
+author: Edward
+description: |
+  maybe the real treasure was the food we made along the way
+  Just login to the chief chefs account (admin)
+flag: ACSI{0mG_h0w_D1D_y0u_ge+_:n}
+
+tags:
+  - web
+
+
+conn:
+  id: knom
+  url: http://<host>:<port>
+  containerPort: 7014 
+  runner: true
+
+hints:
+  - id: 0 
+    body: the admin's password is admin
+    points: 0 # points to deduct

@@ -1,0 +1,10 @@
+title: Git Gud
+author: Reyes
+description: I obtained this file from someone who was shouting at me to 67 69 74 20 67 75 64.
+flag: ACSI{v3rs1on_c0ntr0ll0ll0l0l0l0l0l0l_c077e2d0e8b5}
+
+tags:
+  - forensics
+
+dist:
+  - ./dist/dist.zip

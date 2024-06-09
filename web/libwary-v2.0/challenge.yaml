@@ -1,0 +1,20 @@
+title: Libwary V2.0
+author: Reyes
+description: |
+  After making a horrendous libwary in php for hackac24, I decided to remake one in python.
+  This time, there are credits, to ensure you can only read one book at once (don't be greedy), and ensure you can't read the flag.
+  Also, I've outright disabled reading the flag this time, so it should be impossible.
+
+flag: ACSI{r4c3d_t0_p0llut3_l1br4r9_w1t7_3xtr4_p4r4m5_4t_sp333333d}
+
+tags:
+  - web
+
+dist: 
+  - ./dist/dist.zip
+
+conn:
+  id: libwary
+  url: http://<host>:<port> 
+  containerPort: 7011
+  runner: true

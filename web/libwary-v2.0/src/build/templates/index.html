@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:wght@300&display=swap"
+    rel="stylesheet">
+  <title>Libwary V2.0</title>
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    select,
+    input {
+      border-radius: 5px;
+      margin-bottom: 10px;
+      padding: 10px;
+      height: 7vh;
+    }
+
+    .custom {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+</head>
+
+<body class="pa4 black-80">
+  <div class="custom">
+    <label class="f2 b db mb2">Libwary V2.0<br>
+      <span class="f5 normal black-60">The new and improved libwary to read
+        your favourite books, including flags!</span>
+      </label>
+    <a href="/return">
+    <button class="mv2 pv3 ph4 pointer b br3 hover-bg-dark-red bg-dark-pink white bn f7 ttu tracked"
+      type="submit">Return Loaned Books</button>
+    </a>
+  </div>
+  <details>
+    <summary class="f4 lh-copy">Reviews</summary>
+    <ul>
+      <li>"Yo, this eLibrary platform is a game-changer! 🚀 Easy to use, tons of books at my fingertips, and no late
+        fees? Sign me up! 🙌 Best way to binge-read without breaking the bank. #BookwormsDream #ELibraryGoals"- John
+      </li>
+      <li>"This eLibrary app is LIT! 🔥 Forget waiting in line at the library, I can access all my fave reads with
+        just
+        a few taps. Plus, the interface is so sleek and user-friendly. #TechSavvy #BookLoverApproved" - Jane</li>
+      <li>"Low-key obsessed with this eLibrary app! 📚 It's like having a personal library in my pocket. And the best
+        part? No overdue fines. Sayonara, late fees! #BookwormParadise #ELibraryAddict" - Jordan</li>
+    </ul>
+  </details>
+
+  {% if not user %}
+  <div>
+    <h1 class="f3 lh-copy">Login/Register</h1>
+    <form action="/auth" method="post">
+      <label for="username" class="f6 b db mb2 mt3">Username</label>
+      <input type="text" name="username" id="username" class="w-100 db f6 bg-near-white ba b--sliver gray" required>
+      <label for="password" class="f6 b db mb2 mt3">Password</label>
+      <input type="password" name="password" id="password" class="w-100 db f6 bg-near-white ba b--sliver gray" required>
+      <button class="mv2 pv2 ph3 pointer b br2 hover-bg-dark-blue bg-blue white bn f7 ttu tracked"
+        type="submit">Login</button>
+    </form>
+  </div>
+  {% else %}
+  <div>
+    <form action="/read" method="get">
+
+      <h1 class="f3 lh-copy">Read (Credits: {{ user[4] }})*</h1>
+      <label for="types" class="f6 b db mb2 mt3">Choice </label>
+      <select id="books" class="w-100 db f6 bg-near-white ba b--sliver gray" name="book">
+        <option label="-" value="-"></option>
+        <option label="Romeo and Juliet Act 1 (10 Credits)" value="rj1"></option>
+        <option label="Romeo and Juliet Act 2 (10 Credits)" value="rj2"></option>
+        <option label="Romeo and Juliet Act 3 (10 Credits)" value="rj3"></option>
+        <option label="Romeo and Juliet Act 4 (10 Credits)" value="rj4"></option>
+        <option label="Romeo and Juliet Act 5 (10 Credits)" value="rj5"></option>
+        <option label="Macbeth Act 1 (10 Credits)" value="mb1"></option>
+        <option label="Macbeth Act 2 (10 Credits)" value="mb2"></option>
+        <option label="Macbeth Act 3 (10 Credits)" value="mb3"></option>
+        <option label="Macbeth Act 4 (10 Credits)" value="mb4"></option>
+        <option label="Macbeth Act 5 (10 Credits)" value="mb5"></option>
+        <option label="Flag (1000 Credits) [Unreadable]" value="flag"></option>
+      </select>
+      <label for="types" class="f6 b db mb2 mt3">Font size</label>
+      <input type="number" name="size" id="size" class="w-100 db f6 bg-near-white ba b--sliver gray" value="16">
+      <label for="types" class="f6 b db mb2 mt3">Theme</label>
+      <select id="theme" class="w-100 db f6 bg-near-white ba b--sliver gray" name="theme">
+        <option label="Light" value="light"></option>
+        <option label="Dark" value="dark"></option>
+      </select>
+      <button class="disabled mv2 pv2 ph3 pointer b br2 hover-bg-dark-green bg-green white bn f7 ttu tracked"
+        type="submit">Read</button>
+    </form>
+  </div>
+  {% endif %}
+
+  <p>*You can't read more than one book simultaneously.</p>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+title: Inefficient
+author: Haowei
+description: |
+  This code apparently prints the flag, but it takes too long! Could you make it more efficient? (Maybe with the help of AI?)
+
+flag: ACSI{wr1t3_m0r3_eff1c13nt_c0d3_pl34s3}
+
+tags:
+  - rev
+
+dist: 
+  - ./dist/main.py
+

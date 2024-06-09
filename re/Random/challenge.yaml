@@ -1,0 +1,13 @@
+title: Random
+author: Haowei
+description: |
+  On May 22nd, 2024 Asia/Singapore timezone, somewhere between 7:00pm and 11:59pm, I accidentally ran some malware on my computer that encrypted the flag! Help me please...
+
+flag: ACSI{1_h0p3_U_l34rnt_s0m3th1ng}
+
+tags:
+  - rev
+
+dist: 
+  - ./dist/main.py
+

@@ -1,0 +1,18 @@
+title: Infinity
+author: Haowei
+description: |
+  I learnt in school that infinity is the biggest number. Is that really true???
+flag: ACSI{H0w_d0_c0mput3rs_st0r3_1nf1n1ty?}
+
+tags:
+  - pwn
+
+dist: 
+  - ./dist/main.py
+
+conn:
+  id: infinity
+  url: nc <host> <port> 
+  port: 7009
+  containerPort: 5000 
+  runner: false

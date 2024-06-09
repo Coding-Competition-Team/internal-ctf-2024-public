@@ -1,0 +1,9 @@
+title: areAsAe
+author: Nigel
+description: These numbers are so big, is this even possible????
+flag: ACSI{sm4ll_e5s_4re_pr3tty_d4ng3r0us_right?}
+tags:
+  - crypto
+
+dist:
+  - ./dist/enc

@@ -1,0 +1,17 @@
+title: Blind
+author: Reyes
+description: |
+  Get the admin's password. This should be routine for you.
+flag: ACSI{p0k1ng_bl1nd_1n_th3_d4rk}
+
+tags:
+  - web
+
+dist: 
+  - ./dist/app.py
+
+conn:
+  id: blind
+  url: http://<host>:<port>
+  containerPort: 7013 
+  runner: true

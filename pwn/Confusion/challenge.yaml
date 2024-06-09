@@ -1,0 +1,19 @@
+title: Confusion
+author: Haowei
+description: |
+  There are so many data-types in C! I'm getting a bit confused...
+flag: ACSI{str1ng5_b00l3ans_1nt5_1ts_4ll_th3_s4m3}
+
+tags:
+  - pwn
+
+dist: 
+  - ./dist/confusion
+  - ./dist/confusion.c
+
+conn:
+  id: confusion
+  url: nc <host> <port> 
+  port: 7007
+  containerPort: 5000 
+  runner: false

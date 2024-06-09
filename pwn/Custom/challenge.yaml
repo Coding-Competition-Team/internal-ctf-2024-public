@@ -1,0 +1,20 @@
+title: Custom
+author: Haowei
+description: |
+  I made my custom canary because idk? I'm pretty sure its just as random and secure.
+flag: ACSI{n0t_s0_r4nd0m}
+
+tags:
+  - pwn
+
+dist: 
+  - ./dist/custom
+  - ./dist/Dockerfile
+  - ./dist/custom.c
+
+conn:
+  id: custom
+  url: nc <host> <port> 
+  port: 7008
+  containerPort: 5000 
+  runner: false

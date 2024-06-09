@@ -1,0 +1,17 @@
+title: Stars
+author: I-En
+description: seeing stars
+flag: ACSI{1_s3e_whaT_u_me4n7858697098}
+
+tags:
+  - programming
+
+dist:
+  - ./dist/README.md
+
+conn:
+  id: stars
+  url: nc <host> <port> 
+  port: 7017
+  containerPort: 50000 
+  runner: false

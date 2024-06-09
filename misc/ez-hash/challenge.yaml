@@ -1,0 +1,13 @@
+title: ez-hash
+author: Sean 3
+description: |
+  just a normal hash challenge
+  Wrap the cracked hash with the flag format ACSI{}
+
+flag: ACSI{!!!!!!!##!(^^!@#!@#!@#!}
+
+tags:
+  - misc
+
+dist:
+  - ./dist/hash.txt

@@ -1,0 +1,13 @@
+title: Echo After Me
+author: Reyes
+description: |
+  Easy "reversing" challenge. Everyone must solve this.
+
+flag: ACSI{str1ngs_c4n_s0lv3_th1s}
+
+tags:
+  - rev
+
+dist: 
+  - ./dist/echoafterme
+

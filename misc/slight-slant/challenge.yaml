@@ -1,0 +1,19 @@
+title: slight-slant
+author: Sean 3
+description: |
+  obligatory pyjail chall
+  
+flag: ACSI{w0w_pr0_pyj411_h4xx0r_39ec1f}
+
+tags:
+  - misc
+
+dist:
+  - ./dist/slightslant.py
+
+conn:
+  id: slight
+  url: nc <host> <port> 
+  containerPort: 7022 
+  runner: true
+  

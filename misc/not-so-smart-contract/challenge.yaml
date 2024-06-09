@@ -1,0 +1,16 @@
+title: not-so-smart-contract
+author: Sean 3
+description: |
+  The IPC has made a smart contract to keep secrets! (and pay your taxes!!!)
+  
+  Contract: 0xC95AB4E8BD3820E8cea0d4B5b5aB628168Aab0b7
+  
+  Network: Sepolia testnet
+  
+flag: ACSI{DuMB_c0NtRaC+_ff603b3e}
+
+tags:
+  - misc
+
+dist:
+  - ./dist/dist.sol

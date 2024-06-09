@@ -1,0 +1,22 @@
+title: CustomV2
+author: Haowei
+description: |
+  I decided to use urandom now for true randomness, now no one can bypass my canary!
+
+  Note/Hint: Minor amounts of brute-forcing is required for this challenge!
+flag: ACSI{1_sh0uld_h4v3_us3d_4_l0ng_1nst34d}
+
+tags:
+  - pwn
+
+dist: 
+  - ./dist/customv2
+  - ./dist/Dockerfile
+  - ./dist/customv2.c
+
+conn:
+  id: customv2
+  url: nc <host> <port> 
+  port: 7006
+  containerPort: 5000 
+  runner: false

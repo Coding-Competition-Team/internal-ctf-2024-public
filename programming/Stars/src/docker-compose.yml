@@ -1,0 +1,8 @@
+name: "prog"
+version: "3.7"
+
+services:
+    stars:
+        build: "."
+        ports:
+            - "7017:50000"

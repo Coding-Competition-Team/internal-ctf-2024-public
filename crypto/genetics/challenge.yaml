@@ -1,0 +1,10 @@
+title: Genetics
+author: Reyes
+description: |
+  I recently learnt about how amino acids are made from the genetic code. Wrap the decoded word in ACSI{}.
+  ATG ATT ACT O TGT CAC O AAT GAT AGG ATA GCT
+
+flag: ACSI{MITOCHONDRIA}
+
+tags:
+  - crypto

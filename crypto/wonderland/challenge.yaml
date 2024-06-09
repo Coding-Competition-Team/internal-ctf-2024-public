@@ -1,0 +1,21 @@
+title: Wonderland
+author: I-En
+description: |
+  Wonderland is a wondrous place with wonderful wonders.
+  One of these wonders is wondencrypt, a patented encryption scheme that produces wonderful ciphertexts.
+  I wonder how they do it? I hear that the secret of this encryption is the flag of Wonderland...
+
+flag: ACSI{w0ndeRfu1l_wOnd3rs_1n_W0nderl4nd}
+
+tags:
+  - crypto
+
+dist: 
+  - ./dist/server.py
+
+conn:
+  id: wonder
+  url: nc <host> <port> 
+  containerPort: 4001
+  port: 7001
+  runner: false

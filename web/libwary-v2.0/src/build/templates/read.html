@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Libwary V2.0</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .light {
+      background-color: #f4f4f4;
+    }
+    .dark {
+      background-color: #484848;
+      color: #fff;
+    }
+    p {
+      font-size: {{ size }}px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+</head>
+
+<body class=" {{ theme }} ">
+  <div class="pa4">
+    <label class="f2 b db mb2">Libwary V2.0<br><span class="f5 normal {% if theme=='light' %}black{% endif %}{% if theme=='dark' %}white{% endif %}-70">The new and improved libwary to read your favourite books, including flags!  </span></label>
+    <p>
+      {{ content }}
+    </p>
+    <p style="color: red;">
+      {{ error }}
+    </p>
+  </div>
+</body>
+
+</html>
